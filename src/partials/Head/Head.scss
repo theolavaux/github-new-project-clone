@@ -1,0 +1,24 @@
+.category {
+  border-bottom: 1px solid rgb(234, 236, 239);
+}
+
+.head {
+  &__title {
+    font-size: 2.4rem;
+    font-weight: 400;
+  }
+
+  &__intro {
+    font-size: 1.4rem;
+    color: rgb(88, 96, 105);
+    margin: 0.8rem 0 1.6rem;
+  }
+
+  &__intro-link {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

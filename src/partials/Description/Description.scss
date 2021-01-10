@@ -1,0 +1,109 @@
+.category {
+  border-bottom: 1px solid rgb(234, 236, 239);
+}
+
+.description {
+  margin-top: 3.2rem;
+
+  input[type='text'],
+  select {
+    max-width: 100%;
+    background-color: rgb(250, 251, 252);
+    padding: 0.5rem 1.2rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: rgb(36, 41, 46);
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: right 0.8rem center;
+    border: 1px solid rgb(225, 228, 232);
+    border-radius: 0.6rem;
+    outline: none;
+    box-shadow: rgba(225, 228, 232, 0.2) 0px 1px 0px 0px inset;
+  }
+
+  select {
+    z-index: 1;
+    padding-left: 5rem;
+  }
+
+  .repository {
+    display: grid;
+    gap: 0.8rem;
+    grid-template-columns: auto auto 1fr 1fr;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__owner,
+    &__name {
+      label {
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin-bottom: 0.6rem;
+
+        &::after {
+          content: '*';
+          padding-left: 0.5rem;
+          color: rgb(203, 36, 49);
+        }
+      }
+    }
+
+    &__image-select {
+      position: relative;
+    }
+
+    &__avatar {
+      position: absolute;
+      width: 2rem;
+      height: 2rem;
+      margin: 0.5rem;
+      margin-left: 1.5rem;
+      z-index: 2;
+
+      background: url('../../assets/avatar.jpg') no-repeat;
+      border-radius: 50%;
+    }
+
+    &__separator {
+      justify-content: flex-end;
+
+      span {
+        font-size: 2.4rem;
+      }
+    }
+
+    &__inspiration {
+      font-size: 1.4rem;
+      margin: 0.8rem 0;
+
+      a {
+        text-decoration: none;
+        color: rgb(34, 134, 58);
+        font-weight: 600;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    &__description {
+      margin: 1.5rem 0 1.5rem;
+
+      label {
+        display: inline-block;
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin-bottom: 0.6rem;
+
+        span {
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}

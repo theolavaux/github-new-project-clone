@@ -1,0 +1,39 @@
+.category {
+  border-bottom: 1px solid rgb(234, 236, 239);
+}
+
+.privacy {
+  &__row {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0;
+  }
+
+  &__input {
+    margin-right: 0.4rem;
+  }
+
+  &__icon {
+    margin: 0 0.5rem;
+    margin-right: 0.8rem;
+
+    &--private {
+      fill: rgb(176, 136, 0);
+    }
+  }
+
+  &__information {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__label {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+
+  &__text {
+    font-size: 1.2rem;
+    color: rgb(88, 96, 105);
+  }
+}

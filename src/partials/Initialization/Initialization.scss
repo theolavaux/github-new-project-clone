@@ -1,0 +1,57 @@
+.category {
+  border-bottom: 1px solid rgb(234, 236, 239);
+}
+
+.initialization {
+  margin-top: 1.6rem;
+
+  &__title {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+
+  &__subtitle {
+    font-size: 1.2rem;
+    color: rgb(88, 96, 105);
+    margin-bottom: 1rem;
+  }
+
+  &__option {
+    display: flex;
+    margin-bottom: 1.6rem;
+
+    label {
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+
+    span {
+      font-size: 1.2rem;
+      color: rgb(88, 96, 105);
+
+      a {
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  &__checkbox,
+  &__information {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__information {
+    margin-left: 0.8rem;
+  }
+
+  &__checkbox {
+    input {
+      margin-top: 0.6rem;
+    }
+  }
+}
